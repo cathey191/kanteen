@@ -1,3 +1,7 @@
+@mixin pText{
+	font-size: 11px;
+}
+
 @mixin reorder {
 	.contentImg img{
 		order: 2;
