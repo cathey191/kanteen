@@ -43,6 +43,33 @@ hr{
 	width: 100vw;
 }
 
+main{
+	section{
+		display: flex;
+		align-items: center;
+		.contentImg img{
+			width: 50vw;
+			height: auto;
+		}
+		.contentText{
+			width: 50vw;
+			padding: 15px;
+			font-size: 12px;
+			margin: 0 auto;
+			h3{
+				padding-bottom: 5px;
+			}
+		}
+	}
+	#ourMenu{
+		@include reorder;
+	}
+	#giveAway{
+		@include reorder;
+	}
+}
+
+
 // @media only screen and (min-width: 1000px) {
 // 	#sideNav{
 // 		display: inline-block;

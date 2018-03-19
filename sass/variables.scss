@@ -1,0 +1,8 @@
+@mixin reorder {
+	.contentImg img{
+		order: 2;
+	}
+	.contentText{
+		order: 1;
+	}
+}
