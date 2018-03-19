@@ -1,3 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif; }
 
+#banner {
+  width: 100vw;
+  background-color: black; }
+  #banner .logo {
+    text-align: center; }
+    #banner .logo img {
+      height: 50px; }
+
+#sideNav {
+  display: none; }
+  #sideNav .logo {
+    text-align: center; }
+
+#mainImg img {
+  width: 100vw; }
+
+#mainText p {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 55px;
+  padding-bottom: 55px; }
+
+hr {
+  border: 1.25px solid black;
+  width: 100vw; }
 
 /*# sourceMappingURL=style.css.map */
