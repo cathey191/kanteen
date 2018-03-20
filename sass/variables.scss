@@ -26,11 +26,16 @@
 	p{
 		font-size: 11px;
 	}
+	@media only screen and (min-width: 1000px) {
+		p{
+			font-size: 12px;
+		}
+	}
 }
 
 @mixin contImg {
 	width: 50vw;
-	height: 150px;
+	min-height: 50vw;
 	background-repeat: no-repeat;
 	background-size: cover;
 }

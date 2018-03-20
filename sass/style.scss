@@ -10,26 +10,30 @@
 #sideNav{
 	display: none;
 	position: fixed;
+	left: 0px;
+	top: 0px;
 	background-color: black;
 	text-align: center;
 	height: 100vh;
 	width: 90vw;
+	min-width: 300px;
+	max-width: 550px;
 	.logo{
-		text-align: center;
 		img{
 			height: 50px;
 		}
 	}
-		.burgerMenu{
-			@include iconLarge;
-			float: left;
-			display: block;
-		}
+	.burgerMenu{
+		@include iconLarge;
+		float: left;
+		display: block;
+	}
 	nav{
 		ul{
 			li{
 				a{
 					text-decoration: none;
+					font-weight: lighter;
 					font-size: 18px;
 					color: white;
 					line-height: 2;
@@ -53,12 +57,12 @@
 		}
 		.navMap{
 			display: flex;
-			width: 90vw;
 			align-items: center;
 			p{
 				color: white;
 				width: 50%;
 				text-align: left;
+				font-weight: lighter;
 				padding: 15px;
 			}
 			img{
@@ -112,17 +116,15 @@ hr{
 
 section{
 	display: flex;
-	align-items: center;
+	justify-content: center;
 	.contentText{
 		width: 50vw;
-		padding: 15px;
+		padding: 0px 15px;
 		margin: 0 auto;
 		background-color: white;
+		align-self: center;
 		@include hText;
 		@include pText;
-		p{
-			margin-bottom: 15px;
-		}
 	}
 }
 
@@ -139,6 +141,17 @@ section{
 		background-position: right top;
 		@include contImg;
 	}
+	@include reorder;
+	button{
+		background-color: #dea750;
+		margin-top: 15px;
+		padding: 5px 15px;
+		border: none;
+		border-radius: 0px;
+		color: white;
+		font-size: 12px;
+		text-align: center;
+	}
 }
 #offers{
 	.contentImg {
@@ -153,22 +166,6 @@ section{
 		background-position: center;
 		@include contImg;
 	}
-}
-
-#ourMenu{
-	@include reorder;
-	button{
-		background-color: #dea750;
-		padding: 5px;
-		border: none;
-		color: white;
-		font-size: 12px;
-		font-weight: bold;
-		text-align: center;
-	}
-}
-
-#giveAway{
 	@include reorder;
 	.icon{
 		display: flex;
@@ -176,20 +173,33 @@ section{
 		img{
 			height: 25px;
 			width: auto;
+			margin: 15px;
 		}
 	}
 }
 
+
 .group1{
 	display: flex;
-	align-items: center;
 	.icon{
 		@include icons;
 	}
+	p{
+		align-self: center;
+	}
 }
 
-// @media only screen and (min-width: 1000px) {
-// 	#sideNav{
-// 		display: inline-block;
-// 	}
-// }
+@media only screen and (min-width: 1000px) {
+	#sideNav{
+		display: block;
+		width: 20vw;
+	}
+	#banner{
+		display: none;
+	}
+	main{
+		margin-left: 40%;
+		width: 80vw;
+		right: 0px;
+	}
+}
