@@ -28,6 +28,13 @@
 	}
 }
 
+@mixin contImg {
+	width: 50vw;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 @mixin reorder {
 	.contentImg img{
 		order: 2;

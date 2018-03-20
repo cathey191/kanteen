@@ -45,10 +45,6 @@ hr {
 section {
   display: flex;
   align-items: center; }
-  section .contentImg {
-    width: 50vw; }
-    section .contentImg img {
-      width: 100%; }
   section .contentText {
     width: 50vw;
     padding: 15px;
@@ -62,6 +58,38 @@ section {
       font-size: 11px; }
     section .contentText p {
       margin-bottom: 15px; }
+
+#findUs .contentImg {
+  background-image: url("../images/map.png");
+  background-position: center;
+  width: 50vw;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#ourMenu .contentImg {
+  background-image: url("../images/platters.jpg");
+  background-position: right top;
+  width: 50vw;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#offers .contentImg {
+  background-image: url("../images/coffees.jpg");
+  background-position: center;
+  width: 50vw;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#giveAway .contentImg {
+  background-image: url("../images/coffeeCups.jpg");
+  background-position: center;
+  width: 50vw;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 #ourMenu .contentImg img {
   order: 2; }
