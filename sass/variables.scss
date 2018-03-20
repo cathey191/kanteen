@@ -1,5 +1,31 @@
+@mixin menuIcon {
+	img{
+		height: 30px;
+		width: auto;
+		margin: 5px;
+	}
+}
+
+@mixin icons {
+	img{
+		height: 15px;
+		width: auto;
+		margin: 5px;
+	}
+}
+
+@mixin hText {
+	h3{
+		font-size: 14px;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+}
+
 @mixin pText{
-	font-size: 11px;
+	p{
+		font-size: 11px;
+	}
 }
 
 @mixin reorder {

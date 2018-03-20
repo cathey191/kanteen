@@ -11,6 +11,12 @@
     text-align: center; }
     #banner .logo img {
       height: 50px; }
+  #banner .icon {
+    float: left; }
+    #banner .icon img {
+      height: 30px;
+      width: auto;
+      margin: 5px; }
 
 #sideNav {
   display: none; }
@@ -36,26 +42,51 @@ hr {
   color: black;
   background-color: black; }
 
-main section {
+section {
   display: flex;
   align-items: center; }
-  main section .contentImg img {
-    width: 50vw;
-    height: auto; }
-  main section .contentText {
+  section .contentImg {
+    width: 50vw; }
+    section .contentImg img {
+      height: 160px; }
+  section .contentText {
     width: 50vw;
     padding: 15px;
     margin: 0 auto;
-    font-size: 11px; }
-    main section .contentText h3 {
-      padding-bottom: 5px; }
-main #ourMenu .contentImg img {
+    background-color: white; }
+    section .contentText h3 {
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 10px; }
+    section .contentText p {
+      font-size: 11px; }
+    section .contentText p {
+      margin-bottom: 15px; }
+
+#ourMenu .contentImg img {
   order: 2; }
-main #ourMenu .contentText {
+#ourMenu .contentText {
   order: 1; }
-main #giveAway .contentImg img {
+#ourMenu button {
+  background-color: #dea750;
+  padding: 5px;
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center; }
+
+#giveAway .contentImg img {
   order: 2; }
-main #giveAway .contentText {
+#giveAway .contentText {
   order: 1; }
+
+.group1 {
+  display: flex;
+  align-items: center; }
+  .group1 .icon img {
+    height: 15px;
+    width: auto;
+    margin: 5px; }
 
 /*# sourceMappingURL=style.css.map */
