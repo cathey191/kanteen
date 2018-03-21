@@ -39,6 +39,16 @@
 	}
 }
 
+@mixin tabConstent {
+	flex: 1;
+	padding: 15px;
+	h3{
+		font-size: 16px;
+		color: black;
+		font-weight: normal;
+	}
+}
+
 @mixin contImg {
 	width: 50vw;
 	height: 50vw;

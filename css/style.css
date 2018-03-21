@@ -115,6 +115,9 @@ section {
       section .contentText p {
         font-size: 12px; } }
 
+#map {
+  height: 50vw !important; }
+
 #findUs .contentImg {
   background-image: url("../images/map.png");
   background-position: center;
@@ -188,13 +191,37 @@ section {
   .group1 p {
     align-self: center; }
 
+#tabs {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center; }
+  #tabs .tab {
+    flex: 1;
+    padding: 15px; }
+    #tabs .tab h3 {
+      font-size: 16px;
+      color: black;
+      font-weight: normal; }
+
+.tabs {
+  background-color: #9e9e9e;
+  opacity: 0.4; }
+
+.tabOn {
+  background-color: white;
+  opacity: 1; }
+
 @media only screen and (min-width: 1000px) {
+  body {
+    display: flex; }
+
   #sideNav {
+    flex: 1;
     display: block;
-    width: 20vw;
+    min-width: auto;
+    width: 25%;
     max-width: none;
-    min-width: none;
-    float: left;
     position: fixed; }
     #sideNav .burgerMenu {
       display: none; }
@@ -203,8 +230,10 @@ section {
     display: none; }
 
   #main {
+    width: 75%;
     float: right;
-    width: 80vw; }
+    position: absolute;
+    right: 0; }
 
   #findUs {
     display: none; } }
