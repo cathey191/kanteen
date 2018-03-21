@@ -17,7 +17,7 @@
 	height: 100vh;
 	width: 90vw;
 	min-width: 300px;
-	max-width: 550px;
+	max-width: 350px;
 	.logo{
 		img{
 			height: 50px;
@@ -89,12 +89,16 @@
 	}
 }
 
-main img{
-	display: block;
-}
-
-#mainImg img{
+#main{
 	width: 100vw;
+	#mainImg{
+		width: 100%;
+		height: 40vh;
+		max-height: 500px;
+		background-image: url("../images/room1.jpg");
+		background-position: center;
+		background-size: cover;
+	}
 }
 
 #mainText{
@@ -119,7 +123,8 @@ section{
 	justify-content: center;
 	.contentText{
 		width: 50vw;
-		padding: 0px 15px;
+		padding-left: 15px;
+		padding-right: 15px;
 		margin: 0 auto;
 		background-color: white;
 		align-self: center;
@@ -170,19 +175,18 @@ section{
 	.icon{
 		display: flex;
 		margin: 0 auto;
-		img{
-			height: 25px;
-			width: auto;
-			margin: 15px;
-		}
+		@include icons;
 	}
 }
-
 
 .group1{
 	display: flex;
 	.icon{
-		@include icons;
+		img{
+			height: 15px;
+			width: auto;
+			margin: 5px;
+		}
 	}
 	p{
 		align-self: center;
@@ -193,13 +197,22 @@ section{
 	#sideNav{
 		display: block;
 		width: 20vw;
+		max-width: none;
+		min-width: none;
+		float: left;
+		position: fixed;
+		.burgerMenu{
+			display: none;
+		}
 	}
 	#banner{
 		display: none;
 	}
-	main{
-		margin-left: 40%;
+	#main{
+		float: right;
 		width: 80vw;
-		right: 0px;
+	}
+	#findUs{
+		display: none;
 	}
 }

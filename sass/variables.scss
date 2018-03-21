@@ -8,9 +8,15 @@
 
 @mixin icons {
 	img{
-		height: 15px;
+		height: 20px;
 		width: auto;
 		margin: 5px;
+	}
+	@media only screen and (min-width: 1000px){
+		img{
+			height: 30px;
+			width: auto;
+		}
 	}
 }
 
@@ -35,7 +41,8 @@
 
 @mixin contImg {
 	width: 50vw;
-	min-height: 50vw;
+	height: 50vw;
+	max-height: 300px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
