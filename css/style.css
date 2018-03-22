@@ -242,6 +242,11 @@ section {
       text-align: left; }
     #menuContent .listSection .cost {
       text-align: right; }
+  #menuContent table {
+    width: 100%;
+    text-align: left; }
+    #menuContent table th {
+      text-align: center; }
 
 @media only screen and (min-width: 1000px) {
   #sideNav {

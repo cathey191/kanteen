@@ -14,12 +14,24 @@ $(document).ready(function(){
 		$("#drinks").addClass("menuShow");
 		$("#breakfast").removeClass("menuShow");
 		$("#breakfast").addClass("menuHide");
+		$("#lunch").removeClass("menuShow");
+		$("#lunch").addClass("menuHide");
 	});
 	$("#bkfTab").click(function(){
 		$("#breakfast").removeClass("menuHide");
 		$("#breakfast").addClass("menuShow");
 		$("#drinks").removeClass("menuShow");
 		$("#drinks").addClass("menuHide");
+		$("#lunch").removeClass("menuShow");
+		$("#lunch").addClass("menuHide");
+	});
+	$("#lunchTab").click(function(){
+		$("#lunch").removeClass("menuHide");
+		$("#lunch").addClass("menuShow");
+		$("#drinks").removeClass("menuShow");
+		$("#drinks").addClass("menuHide");
+		$("#breakfast").removeClass("menuShow");
+		$("#breakfast").addClass("menuHide");
 	});
 });
 
