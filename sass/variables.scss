@@ -20,6 +20,12 @@
 	}
 }
 
+@mixin lText {
+	h2{
+		font-size: 18px;
+	}
+}
+
 @mixin hText {
 	h3{
 		font-size: 14px;
@@ -42,11 +48,6 @@
 @mixin tabConstent {
 	flex: 1;
 	padding: 15px;
-	h3{
-		font-size: 16px;
-		color: black;
-		font-weight: normal;
-	}
 }
 
 @mixin contImg {

@@ -7,6 +7,7 @@
 #sideNav {
   display: none;
   position: fixed;
+  z-index: 3;
   left: 0px;
   top: 0px;
   background-color: black;
@@ -59,6 +60,7 @@
         padding: 15px; }
 
 #banner {
+  z-index: 2;
   width: 100vw;
   background-color: black; }
   #banner .logo {
@@ -73,6 +75,7 @@
       margin: 10px; }
 
 #main {
+  z-index: 1;
   width: 100vw; }
   #main #mainImg {
     width: 100%;
@@ -192,6 +195,11 @@ section {
   .group1 p {
     align-self: center; }
 
+.groupLarge img {
+  height: 30px;
+  width: auto;
+  margin: 10px; }
+
 #tabs {
   width: 100%;
   display: flex;
@@ -200,10 +208,10 @@ section {
   #tabs .tab {
     flex: 1;
     padding: 15px; }
-    #tabs .tab h3 {
-      font-size: 16px;
-      color: black;
-      font-weight: normal; }
+    #tabs .tab h2 {
+      font-size: 18px; }
+    #tabs .tab h2 {
+      font-weight: lighter; }
 
 .tabs {
   background-color: #9e9e9e;
@@ -214,8 +222,9 @@ section {
   opacity: 1; }
 
 #menuContent {
-  padding: 20px;
+  padding-top: 20px;
   width: 80vw;
+  min-width: 300px;
   max-width: 500px;
   text-align: center;
   margin: 0 auto; }
@@ -228,6 +237,10 @@ section {
   @media only screen and (min-width: 1000px) {
     #menuContent p {
       font-size: 12px; } }
+  #menuContent h4 {
+    font-size: 11px;
+    padding-bottom: 15px;
+    font-weight: lighter; }
   #menuContent .menuHide {
     display: none; }
   #menuContent .menuShow {
@@ -247,6 +260,43 @@ section {
     text-align: left; }
     #menuContent table th {
       text-align: center; }
+
+#contact {
+  padding: 15px; }
+  #contact h2 {
+    font-size: 18px; }
+  #contact h2 {
+    padding-bottom: 10px;
+    font-weight: bold; }
+  #contact h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px; }
+  #contact h3 {
+    padding-bottom: 5px; }
+  #contact p {
+    font-size: 11px; }
+  @media only screen and (min-width: 1000px) {
+    #contact p {
+      font-size: 12px; } }
+  #contact .conSec {
+    padding-bottom: 20px; }
+
+#imgCon {
+  display: flex;
+  justify-content: space-between; }
+  #imgCon .imgl {
+    width: 45vw;
+    height: 45vw;
+    background-position: center;
+    background-size: cover; }
+  #imgCon .img1 {
+    background-image: url(../images/coffeeMachine.jpg); }
+  #imgCon .img2 {
+    background-image: url(../images/salads.jpg); }
+  #imgCon .img3 {
+    display: none;
+    background-image: url(../images/cabenet.jpg); }
 
 @media only screen and (min-width: 1000px) {
   #sideNav {
@@ -268,6 +318,15 @@ section {
     right: 0; }
 
   #findUs {
+    display: none; }
+
+  #imgCon .imgl {
+    width: 23vw;
+    height: 23vw; }
+  #imgCon .img3 {
+    display: flex; }
+
+  .hrHide {
     display: none; } }
 
 /*# sourceMappingURL=style.css.map */
