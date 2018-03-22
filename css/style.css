@@ -116,7 +116,8 @@ section {
         font-size: 12px; } }
 
 #map {
-  height: 50vw !important; }
+  height: 50vw;
+  max-height: 300px !important; }
 
 #findUs .contentImg {
   background-image: url("../images/map.png");
@@ -192,7 +193,7 @@ section {
     align-self: center; }
 
 #tabs {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   text-align: center; }
@@ -212,12 +213,38 @@ section {
   background-color: white;
   opacity: 1; }
 
-@media only screen and (min-width: 1000px) {
-  body {
-    display: flex; }
+#menuContent {
+  padding: 20px;
+  width: 80vw;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto; }
+  #menuContent h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px; }
+  #menuContent p {
+    font-size: 11px; }
+  @media only screen and (min-width: 1000px) {
+    #menuContent p {
+      font-size: 12px; } }
+  #menuContent .menuHide {
+    display: none; }
+  #menuContent .menuShow {
+    display: block; }
+  #menuContent .listSection {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px; }
+    #menuContent .listSection p {
+      line-height: 1.6; }
+    #menuContent .listSection .items {
+      text-align: left; }
+    #menuContent .listSection .cost {
+      text-align: right; }
 
+@media only screen and (min-width: 1000px) {
   #sideNav {
-    flex: 1;
     display: block;
     min-width: auto;
     width: 25%;
