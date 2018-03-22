@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".burgerMenu").click(function(){
+	$(".hamburger").click(function(){
 		$("#sideNav").toggle();
 	});
 
