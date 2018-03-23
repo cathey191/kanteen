@@ -137,6 +137,7 @@ section {
   section .contentText {
     width: 50vw;
     padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
     background-color: white;
     align-self: center; }
@@ -367,6 +368,9 @@ section {
     right: 0; }
     #main #mainImg {
       height: 60vh; }
+
+  section .contentText {
+    padding-right: 0px; }
 
   #findUs {
     display: none; }
