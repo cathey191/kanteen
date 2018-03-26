@@ -127,6 +127,7 @@ section{
 	.contentText{
 		width: 50vw;
 		padding-left: 15px;
+		padding-right: 15px;
 		margin: 0 auto;
 		background-color: white;
 		align-self: center;
@@ -154,15 +155,17 @@ section{
 		@include contImg;
 	}
 	@include reorder;
-	button{
-		background-color: #dea750;
-		margin-top: 15px;
-		padding: 5px 15px;
-		border: none;
-		border-radius: 0px;
-		color: white;
-		font-size: 12px;
-		text-align: center;
+	form{
+		input{
+			background-color: #dea750;
+			margin-top: 15px;
+			padding: 5px 15px;
+			border: none;
+			border-radius: 0px;
+			color: white;
+			font-size: 12px;
+			text-align: center;
+		}
 	}
 }
 #offers{

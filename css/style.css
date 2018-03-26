@@ -137,6 +137,7 @@ section {
   section .contentText {
     width: 50vw;
     padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
     background-color: white;
     align-self: center; }
@@ -175,7 +176,7 @@ section {
   order: 2; }
 #ourMenu .contentText {
   order: 1; }
-#ourMenu button {
+#ourMenu form input {
   background-color: #dea750;
   margin-top: 15px;
   padding: 5px 15px;
