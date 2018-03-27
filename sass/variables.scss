@@ -64,6 +64,9 @@
 @mixin pText{
 	p{
 		font-size: 11px;
+		max-width: 500px;
+		color: black;
+		text-decoration: none;
 	}
 	@media only screen and (min-width: 1000px) {
 		p{

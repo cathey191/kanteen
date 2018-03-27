@@ -191,6 +191,7 @@ section{
 
 .group1{
 	display: flex;
+	@include pText;
 	.icon{
 		img{
 			height: 15px;
