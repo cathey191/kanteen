@@ -239,17 +239,17 @@ section {
   .group1 p {
     align-self: center; }
 
-#keyMenu {
+.keyMenu {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px; }
-  #keyMenu .group2 {
+  .keyMenu .group2 {
     display: flex; }
-    #keyMenu .group2 img {
+    .keyMenu .group2 img {
       margin: 2px;
       height: 20px;
       width: auto; }
-    #keyMenu .group2 p {
+    .keyMenu .group2 p {
       align-self: center; }
 
 .groupLarge img {
